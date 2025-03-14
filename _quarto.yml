@@ -5,11 +5,11 @@ website:
   title: "TINYTOOLS"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+      - people.qmd
       - href: projects/index.qmd
         text: Projects
+      - href: blog/index.qmd
+        text: blog
     # right:
     #   - icon: github
     #     href: https://github.com/tinytools-py/
