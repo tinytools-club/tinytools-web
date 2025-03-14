@@ -4,6 +4,7 @@ $secondary:     purple;
 $body-color: black;
 $navbar-fg: black;
 $navbar-hl: red;
+
 // $secondary:     $gray-800 !default;
 // $success:       $green !default;
 // $info:          $cyan !default;
@@ -20,29 +21,33 @@ html { font-family: 'Inter', sans-serif; }
   html { font-family: 'Inter var', sans-serif; }
 }
 
+
 nav.navbar {
 
   // center the brand container on page ----
-  .navbar-brand-container {
-    flex: 1;
-    justify-content: center;
-    margin-right: auto;
-    margin-left: auto;
-    order: 21 !important;
-  }
+  @media (min-width: 992px) {
+    .navbar-brand-container {
+        flex: 1;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+        order: 21 !important;
+    }
 
-  #quarto-search {
-    flex: 1;
-    order: 999;
-  }
+    #quarto-search {
+        flex: 1;
+        order: 999;
+    }
 
-  .aa-Autocomplete {
-    margin-left: auto !important;
-  }
-  
-  .navbar-collapse {
-    flex: 1;
-    margin-right: auto;
+
+    .aa-Autocomplete {
+        margin-left: auto !important;
+    }
+    
+    .navbar-collapse {
+        flex: 1;
+        margin-right: auto;
+    }
   }
 
   // ----
@@ -51,11 +56,13 @@ nav.navbar {
     width: 1.5rem;
     height: 1.5rem;
   }
+
   .navbar-brand {
     //font-family: inconsolata;
     //font-size: 1.5rem;
     font-size: 1.3rem;
     font-weight: 800;
+    margin-right: 0px;
     //letter-spacing: .2rem;
   }
 
