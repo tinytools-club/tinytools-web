@@ -8,8 +8,8 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
-      - href: test/test1.qmd
-        text: Test
+      - href: projects/index.qmd
+        text: Projects
     # right:
     #   - icon: github
     #     href: https://github.com/tinytools-py/
@@ -17,7 +17,7 @@ website:
   sidebar:
     - id: test
       contents:
-        - test/test1.qmd
+        - projects/index.qmd
 format:
   html:
     theme: 
