@@ -1,0 +1,96 @@
+/*-- scss:defaults --*/
+$primary:       white;
+$secondary:     purple;
+$body-color: black;
+$navbar-fg: black;
+$navbar-hl: red;
+// $secondary:     $gray-800 !default;
+// $success:       $green !default;
+// $info:          $cyan !default;
+// $warning:       $yellow !default;
+// $danger:        $red !default;
+// $light:         $gray-100 !default;
+// $dark:          $gray-800 !default;
+
+/*-- scss:rules --*/
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+nav.navbar {
+
+  // center the brand container on page ----
+  .navbar-brand-container {
+    flex: 1;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    order: 21 !important;
+  }
+
+  #quarto-search {
+    flex: 1;
+    order: 999;
+  }
+
+  .aa-Autocomplete {
+    margin-left: auto !important;
+  }
+  
+  .navbar-collapse {
+    flex: 1;
+    margin-right: auto;
+  }
+
+  // ----
+
+  .navbar-toggler-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .navbar-brand {
+    //font-family: inconsolata;
+    //font-size: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 800;
+    //letter-spacing: .2rem;
+  }
+
+  .nav-link {
+    padding-left: 5.4px !important;
+    padding-right: 5.4px !important;
+    margin-left: 30px !important;
+    margin-right: 5.4px !important;
+  }
+
+  .menu-text {
+    font-size: .9rem;
+  }
+}
+
+#quarto-header {
+  border: 1px solid #dee2e6;
+
+  nav {
+    max-width: 1350px;
+    margin: auto;
+  }
+}
+
+:root {
+  --bs-body-font-family: inter;
+  --bs-body-font-size: 16px;
+}
+
+:root {
+  --site-color-primary:  #F9F4D8;/*#ebfddd;*/
+  --site-color-primary: #EE8320;
+  --site-color-primary: #C29A68;
+}
+
+h1 {
+    font-size: 1.5rem;
+}

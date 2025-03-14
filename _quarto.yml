@@ -1,0 +1,29 @@
+project:
+  type: website
+
+website:
+  title: "TINYTOOLS"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+      - href: test/test1.qmd
+        text: Test
+    # right:
+    #   - icon: github
+    #     href: https://github.com/tinytools-py/
+
+  sidebar:
+    - id: test
+      contents:
+        - test/test1.qmd
+format:
+  html:
+    theme: 
+      - cosmo
+      - styles.scss
+    toc: true
+
+
+
